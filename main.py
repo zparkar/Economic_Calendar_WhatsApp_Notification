@@ -15,7 +15,7 @@ import sys
 
 @functools.lru_cache
 def get_events():
-    url = 'https://cdn-nfs.faireconomy.media/ff_calendar_thisweek.json'
+    url = 'https://nfs.faireconomy.media/ff_calendar_thisweek.json'
     events = requests.get(url).json()
     filtered_events = []
     for e in events:
